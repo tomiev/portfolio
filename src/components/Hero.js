@@ -1,7 +1,6 @@
 import { Link } from 'gatsby';
 import React, { useState, useEffect } from 'react';
 import HeroVideo from '../images/HeroVideo.webm';
-import { motion } from 'framer-motion';
 
 export default function Hero() {
   const [word, setWord] = useState('impactful');
@@ -34,7 +33,9 @@ export default function Hero() {
         <h1 className='text-5xl'>Todd Evans</h1>
         {/* Consider making the below one <p> with a <span> for the highlight */}
         <p className='mt-8 mb-2 text-lg'>Developer who loves building</p>
-        <div className='m-auto mb-2 bg-lime w-24 text-dark_gray text-lg'><motion.i initial={{y:'50%', opacity: 0, scale: 0.5}}>{ word }</motion.i></div>
+        <div className='inline-block m-auto mb-2 bg-lime p-2 rounded-md -skew-x-12 text-dark_gray text-lg'>
+            <p>{ word }</p>
+        </div>
         <p className='text-lg mb-10'>websites.</p>
         <Link to='/' className='btn'>See more</Link>
       </div>
