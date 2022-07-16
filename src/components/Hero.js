@@ -39,9 +39,9 @@ export default function Hero() {
             key={ word }
             className='inline-block m-auto mb-2 bg-lime p-2 rounded-md -skew-x-12 text-dark_gray text-lg'
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1, duration: 0.6 }}
-            exit={{ opacity: 0, duration: 0.6 }}>
-
+            animate={{ opacity: 1 }}
+            transition={{duration: 0.6, ease: 'easeInOut'}}
+            exit={{ opacity: 0 }}>
             <p>{ word }</p>
           </motion.div>
         </AnimatePresence>
