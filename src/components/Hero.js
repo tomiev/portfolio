@@ -1,13 +1,14 @@
 import { Link } from 'gatsby';
 import React, { useState, useEffect } from 'react';
 import HeroVideo from '../images/HeroVideo.webm';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Hero() {
   const [word, setWord] = useState('impactful');
 
   // Updates the highlighted word every 3 seconds
   useEffect(() => {
-    const words = ['intuitive', 'fast', 'attractive', 'modern', 'performant', 'fun', 'quality', 'beautiful', 'impactful', 'effective', 'scalable', 'functional']
+    const words = ['intuitive', 'fast', 'sleek', 'modern', 'fun', 'quality', 'impactful', 'effective', 'scalable', 'functional']
     let count = 0;
 
     const interval = setInterval(() => {
@@ -33,9 +34,17 @@ export default function Hero() {
         <h1 className='text-5xl'>Todd Evans</h1>
         {/* Consider making the below one <p> with a <span> for the highlight */}
         <p className='mt-8 mb-2 text-lg'>Developer who loves building</p>
-        <div className='inline-block m-auto mb-2 bg-lime p-2 rounded-md -skew-x-12 text-dark_gray text-lg'>
+        <AnimatePresence>
+          <motion.div
+            key={ word }
+            className='inline-block m-auto mb-2 bg-lime p-2 rounded-md -skew-x-12 text-dark_gray text-lg'
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, duration: 0.6 }}
+            exit={{ opacity: 0, duration: 0.6 }}>
+
             <p>{ word }</p>
-        </div>
+          </motion.div>
+        </AnimatePresence>
         <p className='text-lg mb-10'>websites.</p>
         <Link to='/' className='btn'>See more</Link>
       </div>
