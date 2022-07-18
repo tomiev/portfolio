@@ -1,10 +1,9 @@
 import { Link } from 'gatsby';
 import React, { useState, useEffect } from 'react';
 import HeroVideo from '../images/HeroVideo.webm';
-import { motion, AnimatePresence } from 'framer-motion';
-import { unmountComponentAtNode } from 'react-dom';
+import { motion } from 'framer-motion';
 
-export default function Hero() {
+export default function Landing() {
   const [word, setWord] = useState('impactful');
 
   // Updates the highlighted word every 3 seconds
