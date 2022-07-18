@@ -25,7 +25,7 @@ export default function Landing() {
 
   return (
     <section className='min-h-screen'>
-      <div className='my-16 grid-cols-1 md:grid-cols-2'>
+      <div className='my-10 grid-cols-1 md:grid-cols-2'>
         <div>
           <video className='rounded-md' playsInline muted loop> { /* Add autoplay before muted to animate */}
             <source src={HeroVideo} type="video/webm" />
@@ -45,6 +45,7 @@ export default function Landing() {
             </motion.p>
           </div>
           <p className='text-lg mb-10'>websites.</p>
+        </div>
           <Link to='/'>
             <svg class="arrows">
                 <path class="a1" d="M0 0 L30 32 L60 0"></path>
@@ -52,7 +53,6 @@ export default function Landing() {
                 <path class="a3" d="M0 40 L30 72 L60 40"></path>
             </svg>
           </Link>
-        </div>
       </div>
     </section>
   )
