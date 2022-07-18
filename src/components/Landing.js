@@ -8,7 +8,7 @@ export default function Landing() {
 
   // Updates the highlighted word every 3 seconds
   useEffect(() => {
-    const words = ['intuitive', 'fast', 'sleek', 'modern', 'fun', 'quality', 'impactful', 'effective', 'scalable', 'functional']
+    const words = ['intuitive', 'fast', 'sleek', 'modern', 'fun', 'impactful', 'effective', 'scalable', 'functional']
     let count = 0;
 
     const interval = setInterval(() => {
@@ -27,7 +27,7 @@ export default function Landing() {
     <section className='min-h-screen'>
       <div className='my-16 grid-cols-1 md:grid-cols-2'>
         <div>
-          <video className='rounded-md' playsInline autoPlay muted loop>
+          <video className='rounded-md' playsInline muted loop> { /* Add autoplay before muted to animate */}
             <source src={HeroVideo} type="video/webm" />
           </video>
         </div>
