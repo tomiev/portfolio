@@ -2,6 +2,7 @@ import { Link } from 'gatsby';
 import React, { useState, useEffect } from 'react';
 import HeroVideo from '../images/HeroVideo.webm';
 import { motion, AnimatePresence } from 'framer-motion';
+import { unmountComponentAtNode } from 'react-dom';
 
 export default function Hero() {
   const [word, setWord] = useState('impactful');
@@ -34,17 +35,17 @@ export default function Hero() {
         <h1 className='text-5xl'>Todd Evans</h1>
         {/* Consider making the below one <p> with a <span> for the highlight */}
         <p className='mt-8 mb-2 text-lg'>Developer who loves building</p>
-        <AnimatePresence>
-          <motion.div
-            key={ word }
-            className='inline-block m-auto mb-2 bg-lime p-2 rounded-md -skew-x-12 text-dark_gray text-lg'
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{duration: 0.6, ease: 'easeInOut'}}
-            exit={{ opacity: 0 }}>
-            <p>{ word }</p>
-          </motion.div>
-        </AnimatePresence>
+        <div className='m-auto max-w-fit max-h-10 mb-2 bg-lime p-2 pb-9 rounded-md -skew-x-12 text-dark_gray text-lg'>
+          <AnimatePresence>
+            <motion.p
+              key={ word }
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{duration: 1, ease: 'easeInOut'}}
+              >{ word }
+            </motion.p>
+          </AnimatePresence>
+        </div>
         <p className='text-lg mb-10'>websites.</p>
         <Link to='/' className='btn'>See more</Link>
       </div>
