@@ -2,6 +2,7 @@ import * as React from "react"
 import Navbar from '../components/Navbar'
 import Landing from "../components/Landing"
 import About from "../components/About"
+import FeaturedProjects from "../components/FeaturedProjects"
 
 const IndexPage = () => {
   return (
@@ -9,6 +10,7 @@ const IndexPage = () => {
       <Navbar />
       <Landing />
       <About />
+      <FeaturedProjects />
     </main>
   )
 }

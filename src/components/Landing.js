@@ -8,7 +8,7 @@ export default function Landing() {
 
   // Updates the highlighted word every 3 seconds
   useEffect(() => {
-    const words = ['intuitive', 'fast', 'sleek', 'modern', 'fun', 'impactful', 'effective', 'scalable', 'functional']
+    const words = ['intuitive', 'fast', 'sleek', 'modern', 'fun', 'impactful', 'effective', 'scalable', 'functional', 'professional']
     let count = 0;
 
     const interval = setInterval(() => {
