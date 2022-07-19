@@ -1,7 +1,7 @@
-import { Link } from 'gatsby';
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { MemoizedHero } from './Hero';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
 export default function Landing() {
   const [word, setWord] = useState('impactful');
@@ -22,9 +22,8 @@ export default function Landing() {
     };
   }, [])
 
-
   return (
-    <section className='min-h-screen'>
+    <section id='home' className='min-h-screen'>
       <div className='my-10 grid-cols-1 md:grid-cols-2 bg-blue text-blue'>
         <div className='h-80'><MemoizedHero /></div>
         <div className='text-center -mt-6'>
@@ -42,13 +41,13 @@ export default function Landing() {
           </div>
           <p className='text-lg mb-10'>websites.</p>
         </div>
-          <Link to='/'>
+          <AnchorLink to='/#about'>
             <svg class="arrows">
                 <path class="a1" d="M0 0 L30 32 L60 0"></path>
                 <path class="a2" d="M0 20 L30 52 L60 20"></path>
                 <path class="a3" d="M0 40 L30 72 L60 40"></path>
             </svg>
-          </Link>
+          </AnchorLink>
       </div>
     </section>
   )

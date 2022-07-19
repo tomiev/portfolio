@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import Landing from "../components/Landing"
 import About from "../components/About"
 import FeaturedProjects from "../components/FeaturedProjects"
+import Contact from "../components/Contact"
 
 const IndexPage = () => {
   return (
@@ -11,6 +12,7 @@ const IndexPage = () => {
       <Landing />
       <About />
       <FeaturedProjects />
+      <Contact />
     </main>
   )
 }

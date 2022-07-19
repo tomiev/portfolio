@@ -13,6 +13,5 @@ module.exports = {
       },
     },
   },
-  important: true, /* Tailwind classes will override other CSS */
   plugins: [],
 }
