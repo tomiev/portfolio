@@ -13,6 +13,10 @@
   margin: 0.5rem 0 0 1rem;
 }
 
+#tsparticles { /* Consider putting this in component as TailwindCSS */
+  height: 20rem;
+}
+
 .arrows {
 	width: 60px;
 	height: 72px;

@@ -1,7 +1,7 @@
 import { Link } from 'gatsby';
 import React, { useState, useEffect } from 'react';
-import HeroVideo from '../images/HeroVideo.webm';
 import { motion } from 'framer-motion';
+import { MemoizedHero } from './Hero';
 
 export default function Landing() {
   const [word, setWord] = useState('impactful');
@@ -25,12 +25,8 @@ export default function Landing() {
 
   return (
     <section className='min-h-screen'>
-      <div className='my-10 grid-cols-1 md:grid-cols-2'>
-        <div>
-          <video className='rounded-md' playsInline muted loop> { /* Add autoplay before muted to animate */}
-            <source src={HeroVideo} type="video/webm" />
-          </video>
-        </div>
+      <div className='my-10 grid-cols-1 md:grid-cols-2 bg-blue text-blue'>
+        <div className='h-80'><MemoizedHero /></div>
         <div className='text-center -mt-6'>
           <h1 className='text-5xl'>Todd Evans</h1>
           {/* Consider making the below one <p> with a <span> for the highlight */}
