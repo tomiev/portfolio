@@ -7,7 +7,7 @@ import Contact from "../components/Contact"
 
 const IndexPage = () => {
   return (
-    <main className="bg-dark_gray text-white text-sm py-4 px-4 md:py-8 md:px-18 lg:px-24">
+    <main className="bg-dark_gray text-white text-sm ">
       <Navbar />
       <Landing />
       <About />
