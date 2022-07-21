@@ -2,7 +2,7 @@ import React from 'react'
 import { loadFull } from 'tsparticles';
 import Particles from 'react-tsparticles';
 
-export default function Hero() {
+export default function ParticlesBackground() {
   const particlesInit = async (main) => {
     console.log(main);
     await loadFull(main);
@@ -25,7 +25,7 @@ export default function Hero() {
         "fpsLimit": 120,
         "particles": {
           "number": {
-              "value": 30,
+              "value": 45,
               "density": {
                   "enable": true,
                   "value_area": 800
@@ -133,4 +133,4 @@ export default function Hero() {
   )
 }
 
-export const MemoizedHero = React.memo(Hero);
+export const MemoizedHero = React.memo(ParticlesBackground);
