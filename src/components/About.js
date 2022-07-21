@@ -3,7 +3,7 @@ import SkillSphere from './SkillSphere'
 
 export default function About() {
   return (
-    <section id ='about' className='min-h-screen'>
+    <section id ='about' className='anchor min-h-screen'>
       <div className='flex items-center'>
         <h2 className='font-semibold text-4xl'>About</h2>
         <div className='line'></div>

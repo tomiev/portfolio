@@ -6,6 +6,11 @@
   @apply rounded-full py-2 px-3 cursor-pointer border-white border
 }
 
+.anchor {
+  padding-top: 70px;
+  margin-top: -70px;
+}
+
 .line {
   height: 0.0625rem;
   background: #D3D3D3;

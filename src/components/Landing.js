@@ -23,9 +23,9 @@ export default function Landing() {
   }, [])
 
   return (
-    <section id='home' className='min-h-screen relative'>
+    <section id='home' className='min-h-screen relative p-4 m-auto'>
       <MemoizedHero />
-      <div className='my-10 grid-cols-1 md:grid-cols-2 absolute z-1 top-0 left-0'>
+      <div className='m-auto my-60 absolute z-1'>
         <div className='text-center'>
           <h1 className='text-5xl'>Todd Evans</h1>
           {/* Consider making the below one <p> with a <span> for the highlight */}
