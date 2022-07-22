@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@import '/Users/toddevans/code/tomiev/portfolio/src/styles/typography.css';
+
 .btn {
   @apply rounded-full py-2 px-3 cursor-pointer border-white border
+}
+
+.h1 {
+  font-family: "Neue Montreal Bold", sans-serif;
 }
 
 .anchor {
