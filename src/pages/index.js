@@ -7,7 +7,7 @@ import Contact from "../components/Contact"
 
 const IndexPage = () => {
   return (
-    <main className="bg-dark_gray text-white text-sm">
+    <main className="bg-dark_gray text-white">
       <Navbar />
       <div className="grid grid-cols-12">
         <div className="col-span-12">

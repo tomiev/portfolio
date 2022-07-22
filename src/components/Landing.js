@@ -23,13 +23,13 @@ export default function Landing() {
   }, [])
 
   return (
-    <section id='home' className='min-h-screen relative p-4 m-auto'>
+    <section id='home' className='min-h-screen relative p-4'>
       <MemoizedHero />
-      <div className='m-auto my-60 absolute z-1'>
-        <div className=''>
-          <h1 className='text-7xl font-neueMontrealBold'>Todd Evans</h1>
-          <p className='mt-8 mb-2 text-lg'>Developer who loves building
-            <span>
+      <div className='mt-52 absolute z-1'>
+        <div>
+          <h1 className='text-7xl font-neueMontrealMedium'>TODD EVANS</h1>
+          <p className='mt-8 mb-2 text-lg'>Developer who loves building</p>
+            <div className='flex space-x-2'>
               <div className='max-w-fit max-h-10 mb-2 bg-lime p-2 pb-9 rounded-md -skew-x-12 text-dark_gray text-lg'>
                 <motion.p
                   key={ word }
@@ -39,16 +39,9 @@ export default function Landing() {
                   >{ word }
                 </motion.p>
               </div>
-            </span>
-          websites.</p>
+              <div className='text-lg max-h-10 mx-1 my-2'><p>websites.</p></div>
+            </div>
         </div>
-          <AnchorLink to='/#about'>
-            <svg class="arrows">
-                <path class="a1" d="M0 0 L30 32 L60 0"></path>
-                <path class="a2" d="M0 20 L30 52 L60 20"></path>
-                <path class="a3" d="M0 40 L30 72 L60 40"></path>
-            </svg>
-          </AnchorLink>
       </div>
     </section>
   )

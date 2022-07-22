@@ -3,12 +3,12 @@ import SkillSphere from './SkillSphere'
 
 export default function About() {
   return (
-    <section id ='about' className='anchor min-h-screen'>
+    <section id ='about' className='p-4 anchor min-h-screen'>
       <div className='flex items-center'>
         <h2 className='font-semibold text-4xl'>About</h2>
         <div className='line'></div>
       </div>
-      <p className='mt-4 text-base'>
+      <p className='mt-4'>
         I'm a software developer who loves problem-solving and learning new skills. I transitioned to coding when I realised how much I enjoyed the programming aspect of my psychology research.
         <br />
         <br />

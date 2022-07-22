@@ -6,7 +6,7 @@ import { todd_evans_resume } from '/Users/toddevans/code/tomiev/portfolio/static
 
 export default function Navbar() {
   return (
-    <nav className='flex justify-between leading-10 fixed top-0 z-[1000] backdrop-blur-sm shadow-md w-full'>
+    <nav className='flex px-4 py-1 justify-between leading-10 fixed top-0 z-[1000] backdrop-blur-sm shadow-md w-full'>
       <AnchorLink to='/#home'>
         <StaticImage className='w-10 rounded-md' src='/Users/toddevans/code/tomiev/portfolio/src/images/Logo.png' alt='TE logo'/>
       </AnchorLink>
