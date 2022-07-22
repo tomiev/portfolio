@@ -2,8 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@import '/Users/toddevans/code/tomiev/portfolio/src/styles/typography.css';
+
+* {
+  box-sizing: border-box;
+}
+
 .btn {
   @apply rounded-full py-2 px-3 cursor-pointer border-white border
+}
+
+.h1 {
+  font-family: "Neue Montreal Bold", sans-serif;
+}
+
+.anchor {
+  padding-top: 70px;
+  margin-top: -70px;
 }
 
 .line {
@@ -14,7 +29,15 @@
 }
 
 #tsparticles { /* Consider putting this in component as TailwindCSS */
-  height: 20rem;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .arrows {

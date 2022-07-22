@@ -7,12 +7,16 @@ import Contact from "../components/Contact"
 
 const IndexPage = () => {
   return (
-    <main className="bg-dark_gray text-white text-sm py-4 px-4 md:py-8 md:px-18 lg:px-24">
+    <main className="bg-dark_gray text-white">
       <Navbar />
-      <Landing />
-      <About />
-      <FeaturedProjects />
-      <Contact />
+      <div className="grid grid-cols-12">
+        <div className="col-span-12">
+          <Landing />
+          <About />
+          <FeaturedProjects />
+          <Contact />
+        </div>
+      </div>
     </main>
   )
 }
