@@ -27,7 +27,7 @@ export default function Landing() {
       <MemoizedHero />
       <div className='mt-52 absolute z-1'>
         <div>
-          <h1 className='text-7xl font-neueMontrealMedium'>TODD EVANS</h1>
+          <h1 className='text-7xl font-neueMontrealMedium'><u>Todd Evans</u></h1>
           <p className='mt-8 mb-2 text-lg'>Developer who loves building</p>
             <div className='flex space-x-2'>
               <div className='max-w-fit max-h-10 mb-2 bg-lime p-2 pb-9 rounded-md -skew-x-12 text-dark_gray text-lg'>
