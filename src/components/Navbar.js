@@ -1,12 +1,31 @@
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { AnchorLink } from 'gatsby-plugin-anchor-links'
-import { todd_evans_resume } from '/Users/toddevans/code/tomiev/portfolio/static/todd_evans_resume.pdf';
+import { debounce } from '../utilities/helpers'
 
 export default function Navbar() {
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  const handleScroll = debounce(() => {
+    /* Find current scroll position */
+    const currentScrollPos = window.pageYOffset;
+
+    /* Set state based on comparing location info */
+    setVisible((prevScrollPos > currentScrollPos) || currentScrollPos < 10);
+
+    /* Set state to new scroll position */
+    setPrevScrollPos(currentScrollPos);
+  }, 100);
+
+    useEffect(() => {
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+    }, [prevScrollPos, visible, handleScroll]);
+
   return (
-    <nav className='flex px-4 py-1 justify-between leading-10 fixed top-0 z-[1000] backdrop-blur-sm shadow-md w-screen'>
+    <nav style ={{ top: visible ? '0' : '-60px' } } className='flex duration-200 px-4 py-1 justify-between leading-10 fixed top-0 z-[1000] backdrop-blur-sm shadow-md w-screen'>
       <AnchorLink to='/#home'>
         <StaticImage className='w-10 rounded-md' src='/Users/toddevans/code/tomiev/portfolio/src/images/Logo.png' alt='TE logo'/>
       </AnchorLink>
@@ -16,5 +35,5 @@ export default function Navbar() {
         <Link to='/' target="_blank" rel="noopener noreferrer">Resumé</Link>
       </div>
     </nav>
-  )
-}
+  );
+};

@@ -133,4 +133,4 @@ export default function ParticlesBackground() {
   )
 }
 
-export const MemoizedHero = React.memo(ParticlesBackground);
+export const MemoizedBackground = React.memo(ParticlesBackground);

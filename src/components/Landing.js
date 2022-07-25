@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { MemoizedHero } from './ParticlesBackground';
-import { AnchorLink } from 'gatsby-plugin-anchor-links';
+import { MemoizedBackground } from './ParticlesBackground';
 
 export default function Landing() {
   const [word, setWord] = useState('impactful');
@@ -24,7 +23,7 @@ export default function Landing() {
 
   return (
     <section id='home' className='min-h-screen relative p-4'>
-      <MemoizedHero />
+      <MemoizedBackground />
       <div className='mt-52 absolute z-1'>
         <div>
           <h1 className='text-7xl font-neueMontrealMedium'><u>Todd Evans</u></h1>
