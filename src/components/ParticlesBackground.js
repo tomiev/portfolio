@@ -28,7 +28,7 @@ export default function ParticlesBackground() {
               "value": 45,
               "density": {
                   "enable": true,
-                  "value_area": 800
+                  "value_area": 1000,
               }
           },
           "color": {
@@ -38,11 +38,11 @@ export default function ParticlesBackground() {
               "type": "circle"
           },
           "opacity": {
-              "value": 1,
+              "value": 0.7,
               "random": true,
               "anim": {
                   "enable": true,
-                  "speed": 3,
+                  "speed": 2,
                   "opacity_min": 0.1,
                   "sync": false
               }
@@ -61,7 +61,7 @@ export default function ParticlesBackground() {
               "enable": true,
               "distance": 150,
               "color": "#bee11e",
-              "opacity": 1,
+              "opacity": 0.7,
               "width": 1
           },
           "move": {
@@ -84,7 +84,7 @@ export default function ParticlesBackground() {
                   "enable": true,
                   "mode": "grab",
                   "parallax": {
-                      "enable": true,
+                      "enable": false,
                       "smooth": 10,
                       "force": 60
                   }
@@ -105,7 +105,7 @@ export default function ParticlesBackground() {
               "bubble": {
                   "distance": 400,
                   "size": 40,
-                  "duration": 2,
+                  "duration": 5,
                   "opacity": 0.8,
                   "speed": 3
               },
@@ -113,7 +113,7 @@ export default function ParticlesBackground() {
                   "distance": 200
               },
               "push": {
-                  "particles_nb": 4
+                  "particles_nb": 3
               },
               "remove": {
                   "particles_nb": 2
