@@ -22,7 +22,7 @@ export default function ParticlesBackground() {
             "enable": false,
             "zIndex": 0,
         },
-        "fpsLimit": 120,
+        "fpsLimit": 240,
         "particles": {
           "number": {
               "value": 45,

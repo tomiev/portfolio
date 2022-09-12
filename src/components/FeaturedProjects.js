@@ -1,12 +1,20 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
-export default function FeaturedProjects() {
+const FeaturedProjects = ({ projects }) => {
   return (
     <section id='projects' className='p-4 anchor min-h-screen'>
       <div className='flex items-center'>
         <h2 className='font-semibold text-4xl'>Featured</h2>
         <div className="line"></div>
       </div>
+      <div>
+        { projects.map((project, index)=> {
+
+        })}
+      </div>
     </section>
   )
 }
+
+export default FeaturedProjects
