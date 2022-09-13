@@ -1,5 +1,7 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from "react"
+import Project from "./Project"
+import { Link } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const FeaturedProjects = ({ projects }) => {
   return (
@@ -9,8 +11,8 @@ const FeaturedProjects = ({ projects }) => {
         <div className="line"></div>
       </div>
       <div>
-        { projects.map((project, index)=> {
-
+        { projects.map((project, index) => {
+          return <Project key={project.id} index={index} project={project} />
         })}
       </div>
     </section>
