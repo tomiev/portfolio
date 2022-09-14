@@ -5,17 +5,24 @@ import { FaShare } from "@react-icons/all-files/fa/FaShare"
 
 export default function Project({ project, index }) {
   return (
-    <article className='mb-16 grid'>
+    <article className='mb-16 grid relative'>
       {/* Project image */}
       <a href={project.url}>
+        <div className={`transition-all duration-500 h-full w-full opacity-95 absolute z-[1] bg-[#001f54]
+          md:hidden rounded right-0
+          ${index % 2 === 1 && 'right-0'}`
+        }></div>
         <GatsbyImage
           image={(project.image.localFile.childImageSharp.gatsbyImageData)}
           alt={"Screen grab from " + project.title}
-          className='h-72 z-10 rounded-lg md:h-80 lg:col-start-1 lg:col-span-8 lg:row-start-1 lg:row-span-1 lg:h-[30rem]'
+          className={`h-full w-full md:w-[55%] absolute z-0 rounded object-cover object-top
+          transition-all duration-500 group-hover:scale-105 ${index % 2 === 1 && 'right-0'}`}
         />
       </a>
       {/* Project info */}
-      <div className='py-4 px-8 rounded-lg bg-blurple lg:z-20 lg:col-start-5 lg:col-span-12 lg:row-start-1 lg:row-span-1'> {/* TODO: Change colour */}
+      <div className={`z-[2] relative flex flex-col justify-between p-4 w-full h-full md:w-[55%] items-start
+        ${index % 2 === 1 ? '' : 'float-right  md:items-end'}`
+      }>
         <span>0{index + 1}.</span>
         <h3 className='mb-6 text-2xl'>{project.title}</h3>
         <p>{project.description}</p>
