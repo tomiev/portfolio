@@ -1,7 +1,5 @@
 import React from "react"
 import Project from "./Project"
-import { Link } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const FeaturedProjects = ({ projects }) => {
   return (

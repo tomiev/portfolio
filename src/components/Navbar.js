@@ -8,7 +8,6 @@ export default function Navbar() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
 
-  /* TODO: Test app performance without debounce */
   const handleScroll = debounce(() => {
     /* Find current scroll position */
     const currentScrollPos = window.pageYOffset;
