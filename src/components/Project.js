@@ -7,13 +7,15 @@ export default function Project({ project, index }) {
   return (
     <article className='mb-16 grid'>
       {/* Project image */}
-      <GatsbyImage
-        image={(project.image.localFile.childImageSharp.gatsbyImageData)}
-        alt={"Screen grab from " + project.title}
-        className='h-72 z-10 rounded-lg'
-      />
+      <a href={project.url}>
+        <GatsbyImage
+          image={(project.image.localFile.childImageSharp.gatsbyImageData)}
+          alt={"Screen grab from " + project.title}
+          className='h-72 z-10 rounded-lg md:h-80 lg:col-start-1 lg:col-span-8 lg:row-start-1 lg:row-span-1 lg:h-[30rem]'
+        />
+      </a>
       {/* Project info */}
-      <div className='py-4 px-8 rounded-lg bg-blurple'> {/* TODO: Change colour */}
+      <div className='py-4 px-8 rounded-lg bg-blurple lg:z-20 lg:col-start-5 lg:col-span-12 lg:row-start-1 lg:row-span-1'> {/* TODO: Change colour */}
         <span>0{index + 1}.</span>
         <h3 className='mb-6 text-2xl'>{project.title}</h3>
         <p>{project.description}</p>
