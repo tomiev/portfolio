@@ -1,15 +1,15 @@
 import React from 'react'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import { FaGithub } from "@react-icons/all-files/fa/FaGithub"
-import { FaShare } from "@react-icons/all-files/fa/FaShare"
+import { FaExternalLinkAlt } from "@react-icons/all-files/fa/FaExternalLinkAlt"
 
 export default function Project({ project, index }) {
   return (
-    <article className='h-80 mb-16 relative'>
+    <article className='h-72 mb-16 relative'>
       {/* Project image */}
       <a href={project.url}>
         <div className={`transition-all duration-500 h-full w-full opacity-95 absolute z-[1] bg-[#001f54]
-          md:hidden rounded left-0
+          md:hidden rounded-lg left-0
           ${index % 2 === 1 && 'right-0'}`
         }></div>
         <GatsbyImage
@@ -33,7 +33,7 @@ export default function Project({ project, index }) {
         </div>
         <div>
           <a href={project.github} aria-label="Go to project's GitHub" className='inline-block mr-4 text-2xl'><FaGithub /></a>
-          <a href={project.url} aria-label="Visit project site" className='inline-block text-2xl'><FaShare /></a>
+          <a href={project.url} aria-label="Visit project site" className='inline-block text-2xl'><FaExternalLinkAlt /></a>
         </div>
       </div>
     </article>
