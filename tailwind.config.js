@@ -16,8 +16,7 @@ module.exports = {
         'blurple': '#411ee1'
       },
       fontFamily: {
-        neueMontrealBold: ['Neue Montreal Bold', 'sans-serif'],
-        neueMontrealMedium: ['Neue Montreal Medium', 'sans-serif'],
+        'font-inter': ['Quicksand', 'sans-serif']
       },
     },
   },

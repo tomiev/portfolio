@@ -25,15 +25,11 @@ export default function Navbar() {
     }, [prevScrollPos, visible, handleScroll]);
 
   return (
-    <nav style ={{ top: visible ? '0' : '-60px' } } className='flex duration-200 px-4 py-1 justify-between leading-10 fixed top-0 z-[1000] backdrop-blur-sm shadow-md w-screen'>
-      <AnchorLink to='/#home'>
-        <StaticImage className='w-10 rounded-md' src='/Users/toddevans/code/tomiev/portfolio/src/images/Logo.png' alt='TE logo' />
-      </AnchorLink>
-      <div className="space-x-4">
-        <AnchorLink to="/#projects">Projects</AnchorLink>
-        <AnchorLink to="/#contact">Contact</AnchorLink>
-        <Link to='/' target="_blank" rel="noopener noreferrer">Resumé</Link>
-      </div>
+    <nav style ={{ top: visible ? '0' : '-60px' } } className='flex py-1 m-auto w-screen justify-evenly leading-10 fixed top-0 z-[1000] backdrop-blur-sm duration-200'>
+      <AnchorLink to="/#home"><u>Home</u></AnchorLink>
+      <AnchorLink to="/#projects"><u>Projects</u></AnchorLink>
+      <AnchorLink to="/#contact"><u>Contact</u></AnchorLink>
+      <Link to='/' target="_blank" rel="noopener noreferrer"><u>Resumé</u></Link>
     </nav>
   );
 };

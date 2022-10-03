@@ -2,18 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-@import '/Users/toddevans/code/tomiev/portfolio/src/styles/typography.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 
 * {
   box-sizing: border-box;
 }
 
-.btn {
-  @apply rounded-full py-2 px-3 cursor-pointer border-white border
+body {
+  font-family: 'Inter', sans-serif;
 }
 
-.h1 {
-  font-family: "Neue Montreal Bold", sans-serif;
+.btn {
+  @apply rounded-full py-2 px-3 cursor-pointer border-white border
 }
 
 .anchor {

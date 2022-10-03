@@ -25,7 +25,7 @@ export default function ParticlesBackground() {
         "fpsLimit": 240,
         "particles": {
           "number": {
-              "value": 45,
+              "value": 70,
               "density": {
                   "enable": true,
                   "value_area": 1000,
@@ -126,7 +126,7 @@ export default function ParticlesBackground() {
               "image": "",
               "position": "50% 50%",
               "repeat": "no-repeat",
-              "size": "cover"
+              "size": "cover%"
           }
         }}
     />
