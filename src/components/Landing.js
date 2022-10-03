@@ -14,7 +14,11 @@ export default function Landing() {
         </div>
         <div className='absolute self-end flex justify-evenly items-center w-full mb-32'>
           <a href="https://linkedin.com/in/todd-evans-te">LinkedIn</a>
-          <StaticImage src="/Users/toddevans/code/tomiev/portfolio/src/images/Ellipse1.png" alt="Green circle" className='h-24 w-24' />
+          {/* <StaticImage src="/Users/toddevans/code/tomiev/portfolio/src/images/Ellipse1.png" alt="Green circle" className='w-24 animate-spin-slow' /> */}
+          <svg height="130" width="130">
+      		  <circle cx="65" cy="60" r="40%" fill="#bee11e" />
+      		<text x="43" y="65" fill="white">HTML</text>
+    	</svg>
           <a href="https://github.com/tomiev">GitHub</a>
         </div>
     </section>

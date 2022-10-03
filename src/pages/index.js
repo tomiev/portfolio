@@ -35,8 +35,8 @@ const IndexPage = () => {
   return (
     <main className="bg-dark_gray text-white">
       <Navbar />
-      <div className="grid grid-cols-12">
-        <div className="col-span-12">
+      <div className="">
+        <div className="">
           <Landing />
           <About />
           <FeaturedProjects projects={ allStrapiProject.nodes } />
