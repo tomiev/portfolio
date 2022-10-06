@@ -25,11 +25,11 @@ export default function Navbar() {
     }, [prevScrollPos, visible, handleScroll]);
 
   return (
-    <nav style ={{ top: visible ? '0' : '-60px' } } className='flex py-1 m-auto w-screen justify-evenly leading-10 fixed top-0 z-[1000] backdrop-blur-sm duration-200'>
-      <AnchorLink to="/#home"><u>Home</u></AnchorLink>
-      <AnchorLink to="/#projects"><u>Projects</u></AnchorLink>
-      <AnchorLink to="/#contact"><u>Contact</u></AnchorLink>
-      <Link to='/' target="_blank" rel="noopener noreferrer"><u>Resumé</u></Link>
+    <nav style ={{ top: visible ? '0' : '-80px' } } className='flex text-md px-5 py-4 gap-9 w-[20%] ml-[-10%] left-[50%] mt-4 justify-evenly fixed z-[1000] bg-black/40 overflow-hidden backdrop-blur-md duration-200 rounded-xl shadow-md'>
+      <AnchorLink to="/#home">Home</AnchorLink>
+      <AnchorLink to="/#projects" className=''>Projects</AnchorLink>
+      <AnchorLink to="/#contact" className=''>Contact</AnchorLink>
+      <Link to='/' target="_blank" rel="noopener noreferrer">Resumé</Link>
     </nav>
   );
 };
