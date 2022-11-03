@@ -35,14 +35,13 @@ const IndexPage = () => {
   return (
     <main className="bg-dark_gray text-white">
       <Navbar />
-      <div className="">
-        <div className="">
-          <Landing />
-          <About />
-          <FeaturedProjects projects={ allStrapiProject.nodes } />
-          <Contact />
-        </div>
+      <div>
+        <Landing />
+        <About />
+        <FeaturedProjects projects={ allStrapiProject.nodes } />
+        <Contact />
       </div>
+
     </main>
   )
 }

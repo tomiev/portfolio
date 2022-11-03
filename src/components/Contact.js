@@ -9,12 +9,12 @@ function copyToClipboard() {
 
 export default function Contact() {
   return (
-    <section id='contact' className='p-4 bg-[#BB4025]'>
+    <section id='contact' className='p-[calc(8px+1.5625vw)] bg-[#BB4025]'>
       <div className='w-full'>
         <div className='mb-4'>
           <div className='flex justify-between'>
             <h2 className='font-semibold text-3xl'>Contact</h2>
-            <AnchorLink to="/#home"><FaArrowCircleUp /></AnchorLink>
+            <AnchorLink to="/#home" className='text-2xl'><FaArrowCircleUp /></AnchorLink>
           </div>
           <p className='mt-6'>Please drop me an email if you have an enquiry and I’ll get back to you as soon as possible.</p>
           <button

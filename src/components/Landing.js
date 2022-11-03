@@ -6,7 +6,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 export default function Landing() {
   return (
-    <section id='home' className='min-h-screen flex justify-center relative p-4'>
+    <section id='home' className='min-h-screen flex justify-center relative p-[calc(8px+1.5625vw)]'>
         <MemoizedBackground />
         <div className='absolute z-1 mt-72'>
           <div><h1 className='text-7xl'><em><strong>Todd Evans</strong></em></h1></div>
