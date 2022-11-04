@@ -9,7 +9,7 @@ function copyToClipboard() {
 
 export default function Contact() {
   return (
-    <section id='contact' className='p-[calc(8px+1.5625vw)] bg-[#BB4025]'>
+    <section id='contact' className='p-[calc(8px+1.5625vw)] lg:px-48 lg:py-20 bg-[#BB4025]'>
       <div className='w-full'>
         <div className='mb-4'>
           <div className='flex justify-between'>
@@ -19,15 +19,15 @@ export default function Contact() {
           <p className='mt-6'>Please drop me an email if you have an enquiry and I’ll get back to you as soon as possible.</p>
           <button
             onClick={copyToClipboard}
-            className='text-xl text-left mt-6 border-b-2 border-none hover:border-solid'
+            className='text-xl text-left mt-6 hover:underline'
             >evansmtodd@gmail.com
           </button>
           <div className='flex gap-24 mt-12'>
-            <a href="https://linkedin.com/in/todd-evans-te" aria-label='LinkedIn' className='mb-2 border-b-2 border-none hover:border-solid'>LinkedIn</a>
-            <a href="https://github.com/tomiev" aria-label='GitHub' className='mb-2 border-b-2 border-none hover:border-solid'>GitHub</a>
+            <a href="https://linkedin.com/in/todd-evans-te" aria-label='LinkedIn' className='mb-2 hover:underline'>LinkedIn</a>
+            <a href="https://github.com/tomiev" aria-label='GitHub' className='mb-2 hover:underline'>GitHub</a>
           </div>
         </div>
-        <div className="bg-white h-[0.0625rem]"></div>
+        <div className="bg-white h-[0.0625rem] relative"></div>
       </div>
     </section>
   )

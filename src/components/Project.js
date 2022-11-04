@@ -5,14 +5,14 @@ import { FaExternalLinkAlt } from "@react-icons/all-files/fa/FaExternalLinkAlt"
 
 export default function Project({ project, index }) {
   return (
-    <article className='h-64 rounded-lg'>
+    <article className='rounded-lg'>
       <div className='group relative'>
         {/* Project image */}
         <a href={project.url}>
           <GatsbyImage
             image={(project.image.localFile.childImageSharp.gatsbyImageData)}
             alt={"Screen grab from " + project.title}
-            className={`rounded-lg`}
+            className={`rounded-lg h-full max-w-md`}
           />
         </a>
         {/* Projects info overlay */}

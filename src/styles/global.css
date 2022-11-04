@@ -13,10 +13,6 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-.btn {
-  @apply rounded-full py-2 px-3 cursor-pointer border-white border
-}
-
 .anchor {
   padding-top: 70px;
   margin-top: -70px;
@@ -32,4 +28,14 @@ body {
   right: 0;
   padding: 0;
   margin: 0;
+}
+
+@layer components {
+  .line {
+    @apply h-0.5 w-[37%] bg-[#2f3957] mx-4 rounded-3xl
+  }
+
+  .btn {
+    @apply rounded-full py-2 px-3 cursor-pointer border-white border
+  }
 }
