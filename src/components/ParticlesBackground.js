@@ -97,7 +97,7 @@ export default function ParticlesBackground() {
           },
           "modes": {
               "grab": {
-                  "distance": 400,
+                  "distance": 300,
                   "line_linked": {
                       "opacity": 1
                   }
