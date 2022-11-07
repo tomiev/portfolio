@@ -19,7 +19,9 @@ const IndexPage = () => {
           image {
             localFile {
               childImageSharp {
-                gatsbyImageData
+                gatsbyImageData(
+                  breakpoints: [320 768 1024 1440 2560]
+                )
               }
             }
           }

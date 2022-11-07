@@ -18,7 +18,8 @@ body {
   margin-top: -70px;
 }
 
-#tsparticles { /* Consider putting this in component as TailwindCSS */
+/* Landing page background */
+#tsparticles {
   height: 100;
   width: 100%;
   position: absolute;
@@ -32,7 +33,7 @@ body {
 
 @layer components {
   .line {
-    @apply h-0.5 w-[37%] bg-[#2f3957] mx-4 rounded-3xl
+    @apply h-0.5 w-full bg-[#2f3957] mx-4 rounded-3xl
   }
 
   .btn {
@@ -40,6 +41,7 @@ body {
   }
 }
 
+/* Landing page arrow animation */
 .arrows {
 	width: 60px;
 	height: 72px;
@@ -52,7 +54,7 @@ body {
 .arrows path {
 	stroke: white;
 	fill: transparent;
-	stroke-width: 2px;
+	stroke-width: 1px;
 	animation: arrow 2s infinite;
 	-webkit-animation: arrow 2s infinite;
 }
