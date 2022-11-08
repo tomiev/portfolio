@@ -17,7 +17,7 @@ export default function About() {
           <p>
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris, quis nostrud exercitation ullamco nisi, ut aliquip ex ea commodo consequat.
           </p>
-          <div className='lg:mt-4 lg:ml-4 overflow-hidden'>
+          <div className='flex justify-center lg:flex-none lg:mt-4 lg:ml-4 overflow-hidden'>
             <SkillSphere />
           </div>
         </div>
