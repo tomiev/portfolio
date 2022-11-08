@@ -145,6 +145,11 @@ const defaultState: tagSphereProps = {
       width={40}
     />,
     <img
+      src="https://cdn.svgporn.com/logos/graphql.svg"
+      alt="GraphQL"
+      width={40}
+    />,
+    <img
       src="https://cdn.svgporn.com/logos/figma.svg"
       alt="Figma"
       width={40}
