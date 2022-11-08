@@ -10,9 +10,9 @@ export default function Landing() {
   return (
     <section id='home' className='min-h-screen flex justify-center relative p-[calc(8px+1.5625vw)] lg:px-48 lg:py-20'>
         <MemoizedBackground />
-        <div className='absolute z-1 mt-72 text-center lg:text-left'>
-          <h1 className='text-4xl lg:text-7xl lg:italic'><strong>Todd Evans</strong></h1>
-          <div><p className='text-3xl mt-2 lg:text-7xl lg:ml-24'>Software Developer</p></div>
+        <div className='absolute z-1 mt-72 text-center md:text-left'>
+          <h1 className='text-4xl md:text-6xl lg:text-7xl md:italic'><strong>Todd Evans</strong></h1>
+          <div><p className='text-3xl mt-2 md:text-6xl lg:text-7xl md:ml-24'>Software Developer</p></div>
         </div>
         <div className='absolute bottom-[15%] flex justify-evenly items-center w-full mb-32'>
           <a href="https://linkedin.com/in/todd-evans-te" className='hover:underline'>LinkedIn</a>
