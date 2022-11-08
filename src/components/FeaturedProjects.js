@@ -9,7 +9,7 @@ const FeaturedProjects = ({ projects }) => {
         <h2 className='font-semibold text-3xl text-center'>Featured Projects</h2>
         <div className="line"></div>
       </div>
-      <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 justify-center">
+      <div className="flex flex-col md:grid md:grid-cols-2 2xl:grid-cols-3 gap-4 lg:gap-8 justify-center">
         { projects.map((project, index) => {
           return <Project key={project.id} index={index} project={project} />
         })}
