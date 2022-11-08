@@ -209,7 +209,7 @@ const defaultState: tagSphereProps = {
       width={40}
     />,
   ],
-  maxSpeed: 6,
+  maxSpeed: 2,
   initialSpeed: 32,
   initialDirection: 135,
   keepRollingAfterMouseOut: true,
