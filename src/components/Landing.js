@@ -16,10 +16,10 @@ export default function Landing() {
           <div><p className='text-3xl mt-2 md:text-6xl lg:text-7xl md:ml-24'>Software Developer</p></div>
         </div>
         <div className='absolute bottom-[15%] flex justify-evenly items-center w-full mb-32'>
-          <a href="https://linkedin.com/in/todd-evans-te" className='hover:underline'>LinkedIn</a>
-          <a href="https://github.com/tomiev" className='hover:underline'>GitHub</a>
+          <a href="https://linkedin.com/in/todd-evans-te" className='lg:hover:underline'>LinkedIn</a>
+          <a href="https://github.com/tomiev" className='lg:hover:underline'>GitHub</a>
         </div>
-        <AnchorLink to="/#about" className='hover:underline'>
+        <AnchorLink to="/#about" className='lg:hover:underline'>
           <svg class="arrows">
 							<path class="a1" d="M0 0 L30 32 L60 0"></path>
 							<path class="a2" d="M0 20 L30 52 L60 20"></path>

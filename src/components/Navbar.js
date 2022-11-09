@@ -27,10 +27,10 @@ export default function Navbar() {
   return (
     <div className='flex justify-center'>
       <nav style ={{ top: visible ? '0' : '-80px' } } className='hidden md:flex gap-9 text-md px-5 py-4 w-auto mt-4 justify-center items-center fixed z-[1000] bg-black/40 overflow-hidden backdrop-blur-md duration-200 rounded-xl shadow-md'>
-        <AnchorLink to="/#home" className='hover:underline'>Home</AnchorLink>
-        <AnchorLink to="/#projects" className='hover:underline'>Projects</AnchorLink>
-        <AnchorLink to="/#contact" className='hover:underline'>Contact</AnchorLink>
-        <Link to='/' target="_blank" rel="noopener noreferrer" className='hover:underline'>Resumé</Link>
+        <AnchorLink to="/#home" className='lg:hover:underline'>Home</AnchorLink>
+        <AnchorLink to="/#projects" className='lg:hover:underline'>Projects</AnchorLink>
+        <AnchorLink to="/#contact" className='lg:hover:underline'>Contact</AnchorLink>
+        <Link to='/' target="_blank" rel="noopener noreferrer" className='lg:hover:underline'>Resumé</Link>
       </nav>
     </div>
   );

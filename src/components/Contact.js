@@ -19,12 +19,12 @@ export default function Contact() {
           <p className='mt-6'>Please drop me an email if you have an enquiry and I’ll get back to you as soon as possible.</p>
           <button
             onClick={copyToClipboard}
-            className='text-xl text-left mt-6 hover:underline'
+            className='text-xl text-left mt-6 lg:hover:underline'
             >evansmtodd@gmail.com
           </button>
           <div className='flex gap-24 mt-12'>
-            <a href="https://linkedin.com/in/todd-evans-te" aria-label='LinkedIn' className='mb-2 hover:underline'>LinkedIn</a>
-            <a href="https://github.com/tomiev" aria-label='GitHub' className='mb-2 hover:underline'>GitHub</a>
+            <a href="https://linkedin.com/in/todd-evans-te" aria-label='LinkedIn' className='mb-2 lg:hover:underline'>LinkedIn</a>
+            <a href="https://github.com/tomiev" aria-label='GitHub' className='mb-2 lg:hover:underline'>GitHub</a>
           </div>
         </div>
         <div className="bg-white h-[0.0625rem] relative"></div>
