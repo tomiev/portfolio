@@ -202,7 +202,11 @@ const defaultState: tagSphereProps = {
       alt="Tailwind CSS"
       width={60}
     />,
-    <img src="https://cdn.svgporn.com/logos/postgresql.svg" alt="Postgresql" width={60} />,
+    <img
+      src="https://cdn.svgporn.com/logos/postgresql.svg"
+      alt="Postgresql"
+      width={60}
+    />,
     <img
       src="https://cdn.svgporn.com/logos/javascript.svg"
       alt="Javascript"

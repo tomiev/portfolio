@@ -126,7 +126,7 @@ export default function ParticlesBackground() {
               "image": "",
               "position": "50% 50%",
               "repeat": "no-repeat",
-              "size": "cover%"
+              "size": "cover"
           }
         }}
     />

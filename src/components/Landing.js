@@ -8,9 +8,10 @@ import { AnchorLink } from 'gatsby-plugin-anchor-links'
 
 export default function Landing() {
   return (
-    <section id='home' className='min-h-screen flex justify-center relative p-[calc(8px+1.5625vw)] lg:px-48 lg:py-20'>
-        <MemoizedBackground />
-        <div className='absolute z-1 mt-72 text-center md:text-left'>
+    <section id='home' className='h-screen flex justify-center relative p-[calc(8px+1.5625vw)] lg:px-48 lg:py-20'>
+      <MemoizedBackground />
+      <div className='flex justify-center items-center'>
+        <div className='absolute z-1 text-center md:text-left'>
           <h1 className='text-4xl md:text-6xl lg:text-7xl md:italic'><strong>Todd Evans</strong></h1>
           <div><p className='text-3xl mt-2 md:text-6xl lg:text-7xl md:ml-24'>Software Developer</p></div>
         </div>
@@ -25,10 +26,11 @@ export default function Landing() {
 							<path class="a3" d="M0 40 L30 72 L60 40"></path>
 					</svg>
         </AnchorLink>
-         {/* <svg height="130" width="130">
-      		  <circle cx="65" cy="60" r="40%" fill="#bee11e" />
-      		  <text x="43" y="65" fill="white"></text>
-    	    </svg> */}
+        {/* <svg height="130" width="130">
+          <circle cx="65" cy="60" r="40%" fill="#bee11e" />
+          <text x="43" y="65" fill="white"></text>
+        </svg> */}
+      </div>
     </section>
   )
 }
