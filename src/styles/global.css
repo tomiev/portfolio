@@ -13,11 +13,6 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-.anchor {
-  padding-top: 70px;
-  margin-top: -70px;
-}
-
 /* Landing page background */
 #tsparticles {
   height: 100;
