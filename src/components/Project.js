@@ -8,13 +8,11 @@ export default function Project({ project, index }) {
     <article className='rounded-lg'>
       <div className='group relative'>
         {/* Project image */}
-        <a href={project.url}>
-          <GatsbyImage
-            image={(project.image.localFile.childImageSharp.gatsbyImageData)}
-            alt={"Screen grab from " + project.title}
-            className={`rounded-lg`}
-          />
-        </a>
+        <GatsbyImage
+          image={(project.image.localFile.childImageSharp.gatsbyImageData)}
+          alt={"Screen grab from " + project.title}
+          className={`rounded-lg`}
+        />
         {/* Projects info overlay */}
         <div className='absolute w-full h-full top-0 left-0 p-4 md:h-0 rounded-lg flex flex-col backdrop-brightness-[.20] justify-center items-center md:opacity-0 group-hover:h-full group-hover:opacity-100 duration-300'>
           <h3 className='m-2 lg:mb-6 text-2xl'>{project.title}</h3>
