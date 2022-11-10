@@ -32,33 +32,20 @@ export default function About() {
           >
         </motion.div>
       </div>
-      <div className='flex flex-col lg:flex-row justify-center text-lg gap-2 lg:gap-32'>
-        <motion.p
-          className='mt-4 lg:w-96 lg:text-2xl'
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: "all" }}
-          transition={{ duration: 0.5 }}
-          >"Lorem ipsum dolor sit amet, consectetur <span className='text-lime text-xl lg:text-3xl'>adipiscing</span> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis <span className='text-lime text-xl lg:text-3xl'>nostrud</span> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris, quis nostrud exercitation ullamco nisi, ut aliquip ex ea commodo consequat.“
-        </motion.p>
+      <motion.div
+        className='flex flex-col lg:flex-row justify-center text-lg gap-2 lg:gap-32'
+        initial={{ opacity: 0, y: 24 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: "some" }}
+        transition={{ duration: 0.5 }}
+        ><p className='mt-4 lg:w-96 lg:text-2xl'>"Lorem ipsum dolor sit amet, consectetur <span className='text-lime text-xl lg:text-3xl'>adipiscing</span> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis <span className='text-lime text-xl lg:text-3xl'>nostrud</span> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris, quis nostrud exercitation ullamco nisi, ut aliquip ex ea commodo consequat.“</p>
         <div className='flex flex-col mt-4 lg:w-96'>
-          <motion.p
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: "all" }}
-            transition={{ duration: 0.5 }}
-            >Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris, quis nostrud exercitation ullamco nisi, ut aliquip ex ea commodo consequat.
-          </motion.p>
-          <motion.div
-            className='flex justify-center lg:flex-none lg:mt-4 lg:ml-4 overflow-hidden'
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: "some" }}
-            transition={{ duration: 0.5 }}
-            ><SkillSphere />
-          </motion.div>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris, quis nostrud exercitation ullamco nisi, ut aliquip ex ea commodo consequat.</p>
+          <div className='flex justify-center lg:flex-none lg:mt-4 lg:ml-4 overflow-hidden'>
+            <SkillSphere />
+          </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   )
 }
