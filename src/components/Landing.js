@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { MemoizedBackground } from './ParticlesBackground';
 import { StaticImage } from 'gatsby-plugin-image'
 import { AnchorLink } from 'gatsby-plugin-anchor-links'
-
-
 
 export default function Landing() {
   return (
