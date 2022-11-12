@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { MemoizedBackground } from './ParticlesBackground';
 import { StaticImage } from 'gatsby-plugin-image'
-import { AiFillGithub } from 'react-icons/fa'
 
 export default function Landing() {
   return (
