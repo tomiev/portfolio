@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { MemoizedBackground } from './ParticlesBackground';
 import { StaticImage } from 'gatsby-plugin-image'
-import { AnchorLink } from 'gatsby-plugin-anchor-links'
+import { AiFillGithub } from 'react-icons/fa'
 
 export default function Landing() {
   return (
@@ -11,7 +11,7 @@ export default function Landing() {
       <div className='flex justify-center'>
         <div className='absolute top-[40%] z-1 text-center md:text-left'>
           <motion.h1
-            className='text-4xl md:text-6xl lg:text-7xl md:italic'
+            className='text-5xl md:text-6xl lg:text-7xl md:italic'
             initial={{opacity: 0, y: 24}}
             animate={{opacity: 1, y: 0}}
             transition={{bounce: 0, delay: 0.4}}
@@ -25,7 +25,7 @@ export default function Landing() {
             >Software Developer
           </motion.p>
         </div>
-        <div className='absolute bottom-[10%] flex justify-evenly gap-32 items-center w-full mb-32'>
+        <div className='absolute bottom-[10%] flex justify-evenly gap-32 items-center w-full mb-16 md:mb-32'>
           <motion.a
             href="https://linkedin.com/in/todd-evans-te"
             className='lg:hover:underline'

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { AnchorLink } from 'gatsby-plugin-anchor-links'
 import { debounce } from '../utilities/helpers'
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 
 export default function Navbar() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
