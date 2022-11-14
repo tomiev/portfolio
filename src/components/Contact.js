@@ -3,7 +3,6 @@ import { AnchorLink } from 'gatsby-plugin-anchor-links'
 import { FaArrowCircleUp } from 'react-icons/fa'
 import { motion } from 'framer-motion';
 
-
 function copyToClipboard() {
   navigator.clipboard.writeText('evansmtodd@gmail.com').then(() => alert('Coped to clipboard'))
 }

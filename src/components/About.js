@@ -2,7 +2,6 @@ import React from 'react'
 import SkillSphere from './SkillSphere'
 import { motion } from 'framer-motion';
 
-
 export default function About() {
   return (
     <section id ='about' className='p-[calc(8px+1.5625vw)] lg:px-48 lg:pt-20 h-fit'>
