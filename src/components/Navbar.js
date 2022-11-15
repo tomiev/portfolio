@@ -48,7 +48,7 @@ export default function Navbar() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ bounce: 0, delay: 0.3 }}>
-          <a href="/todd_evans_cv.pdf" target='_blank' rel='noopener noreferrer' className='lg:hover:underline'>Resumé</a>
+          <a href="/todd_evans_resume.pdf" target='_blank' rel='noopener noreferrer' className='lg:hover:underline'>Resumé</a>
         </motion.div>
       </nav>
     </div>

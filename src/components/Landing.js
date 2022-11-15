@@ -24,10 +24,10 @@ export default function Landing() {
             >Software Developer
           </motion.p>
         </div>
-        <div className='absolute bottom-[10%] flex justify-evenly gap-32 items-center w-full mb-16 md:mb-24'>
+        <div className='absolute bottom-[10%] flex justify-evenly gap-16 md:gap-32 items-center w-full mb-24'>
           <motion.a
             href="https://linkedin.com/in/todd-evans-te"
-            className='lg:hover:underline'
+            className='hidden md:block lg:hover:underline'
             initial={{opacity: 0, y: 24}}
             animate={{opacity: 1, y: 0}}
             transition={{delay: 0.6, bounce: 0}}
@@ -39,10 +39,10 @@ export default function Landing() {
             placeholder="none"
             width={100}
             height={100}
-            className='absolute animate-spin-slow linear infinite md:w-[130px] md:h-[130px]' />
+            className='absolute animate-spin-slow linear infinite w-[110px] h-[110px] md:w-[130px] md:h-[130px]' />
           <motion.a
             href="https://github.com/tomiev"
-            className='lg:hover:underline'
+            className='hidden md:block lg:hover:underline'
             initial={{opacity: 0, y: 24}}
             animate={{opacity: 1, y: 0}}
             transition={{delay: 0.6, bounce: 0}}
