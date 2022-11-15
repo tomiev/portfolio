@@ -24,7 +24,7 @@ export default function Landing() {
             >Software Developer
           </motion.p>
         </div>
-        <div className='absolute bottom-[10%] flex justify-evenly gap-16 md:gap-32 items-center w-full mb-16 xl:mb-24'>
+        <div className='absolute bottom-[10%] flex justify-evenly gap-16 md:gap-32 items-center w-full'>
           <motion.a
             href="https://linkedin.com/in/todd-evans-te"
             className='hidden md:block lg:hover:underline'
