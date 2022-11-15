@@ -4,19 +4,13 @@ import Particles from 'react-tsparticles';
 
 export default function ParticlesBackground() {
   const particlesInit = async (main) => {
-    console.log(main);
     await loadFull(main);
-  };
-
-  const particlesLoaded = (container) => {
-    console.log(container);
   };
 
   return (
     <Particles
       id="tsparticles"
       init={particlesInit}
-      loaded={particlesLoaded}
       options = {{
         "fullScreen": {
             "enable": false,
