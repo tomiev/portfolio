@@ -37,8 +37,8 @@ export default function Landing() {
             src="/Users/toddevans/code/tomiev/portfolio/src/images/landing-circle.png"
             alt="Scroll down button"
             placeholder="none"
-            width={100}
-            height={100}
+            width={130}
+            height={130}
             className='absolute animate-spin-slow linear infinite w-[110px] h-[110px] md:w-[130px] md:h-[130px]' />
           <motion.a
             href="https://github.com/tomiev"
