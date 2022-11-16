@@ -42,7 +42,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-I built this software developer portfolio using [Gatsby](https://www.gatsbyjs.com/), a static site generator based on [React](https://reactjs.org/) and [GraphQL](https://graphql.org). The website was styled using [TailwindCSS](https://tailwindcss.com) and is hosted on [Netlify](https://www.netlify.com/).
+I built this software developer portfolio using [Gatsby](https://www.gatsbyjs.com/), a static site generator based on [React](https://reactjs.org/) and [GraphQL](https://graphql.org). I used a headless CMS called [Strapi](https://strapi.io) to manage the information about each project displayed in the portfolio. This portfolio was styled using [TailwindCSS](https://tailwindcss.com) and is hosted on [Netlify](https://www.netlify.com/).
 
 Visit the site at https://toddevans.dev
 
