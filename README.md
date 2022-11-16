@@ -56,7 +56,7 @@
 ### Built With
 
 * [![React][React.js]][React-url]
-* [![GraphQl][GraphQL][GraphQL-url]
+* [![GraphQl][GraphQL]][GraphQL-url]
 * [![Gatsby][Gatsby]][Gatsby-url]
 * [![TailwindCSS][TailwindCSS]][TailwindCSS-url]
 
