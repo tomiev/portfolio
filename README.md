@@ -43,7 +43,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![toddevans.dev][product-screenshot]](https://toddevans.dev)
+  <a href="https://toddevans.dev">
+    <img src="static/screenshot.png" alt="Product screenshot" width="320" height="200">
+  </a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -63,8 +65,8 @@
 
 If you ever want to reach out, I'm always keen for a chat ☕️
 
-Todd Evans 
 evansmtodd@gmail.com
+<br />
 [LinkedIn](https://linkedin.com/in/todd-evans-te)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
