@@ -42,10 +42,14 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+I built this software developer portfolio using [Gatsby](https://www.gatsbyjs.com/), a static site generator based on [React](https://reactjs.org/) and [GraphQL](https://graphql.org). The website was styled using [TailwindCSS](https://tailwindcss.com) and is hosted on [Netlify](https://www.netlify.com/).
 
-  <a href="https://toddevans.dev">
-    <img src="static/screenshot.png" alt="Product screenshot" width="320" height="200">
-  </a>
+Visit the site at https://toddevans.dev
+
+<br />
+<a href="https://toddevans.dev">
+  <img src="static/screenshot.png" alt="Product screenshot" width="320" height="200">
+</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
