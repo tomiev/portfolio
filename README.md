@@ -73,6 +73,7 @@ Todd Evans - [LinkedIn](https://linkedin.com/in/todd-evans-te) - evansmtodd@gmai
 ## Acknowledgments
 
 * [Netlify](https://www.netlify.com/)
+* [Strapi](https://strapi.io)
 * [React Icons](https://react-icons.github.io/react-icons/search)
 * [Particles.js](https://vincentgarreau.com/particles.js/)
 * [Framer Motion](https://www.framer.com/motion/)
