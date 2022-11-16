@@ -43,7 +43,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://toddevans.dev)
+[![toddevans.dev][product-screenshot]](https://toddevans.dev)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
