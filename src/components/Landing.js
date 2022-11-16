@@ -27,6 +27,8 @@ export default function Landing() {
         <div className='absolute bottom-[10%] flex justify-evenly gap-16 md:gap-32 items-center w-full'>
           <motion.a
             href="https://linkedin.com/in/todd-evans-te"
+            target="_blank"
+            rel="noreferrer noopener"
             className='hidden md:block lg:hover:underline'
             initial={{opacity: 0, y: 24}}
             animate={{opacity: 1, y: 0}}
@@ -42,6 +44,8 @@ export default function Landing() {
             className='absolute animate-spin-slow linear infinite w-[110px] h-[110px] md:w-[130px] md:h-[130px]' />
           <motion.a
             href="https://github.com/tomiev"
+            target="_blank"
+            rel="noreferrer noopener"
             className='hidden md:block lg:hover:underline'
             initial={{opacity: 0, y: 24}}
             animate={{opacity: 1, y: 0}}

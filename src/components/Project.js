@@ -23,8 +23,8 @@ export default function Project({ project, index }) {
             })}
           </div>
           <div>
-            <a href={project.github} aria-label="Go to project's GitHub" className='inline-block mr-4 text-2xl'><FaGithub /></a>
-            <a href={project.url} aria-label="Visit project site" className='inline-block text-2xl'><FaExternalLinkAlt /></a>
+            <a href={project.github} target="_blank" rel="noreferrer noopener" aria-label="Go to project's GitHub" className='inline-block mr-4 text-2xl'><FaGithub /></a>
+            <a href={project.url} target="_blank" rel="noreferrer noopener" aria-label="Visit project site" className='inline-block text-2xl'><FaExternalLinkAlt /></a>
           </div>
         </div>
       </div>

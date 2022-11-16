@@ -44,8 +44,8 @@ export default function Contact() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: "all" }}
             transition={{ duration: 0.5 }}
-            ><a href="https://linkedin.com/in/todd-evans-te" aria-label='LinkedIn' className='mb-2 lg:hover:underline'>LinkedIn</a>
-            <a href="https://github.com/tomiev" aria-label='GitHub' className='mb-2 lg:hover:underline'>GitHub</a>
+            ><a href="https://linkedin.com/in/todd-evans-te" target="_blank" rel="noreferrer noopener" aria-label='LinkedIn' className='mb-2 lg:hover:underline'>LinkedIn</a>
+            <a href="https://github.com/tomiev" aria-label='GitHub' target="_blank" rel="noreferrer noopener" className='mb-2 lg:hover:underline'>GitHub</a>
           </motion.div>
         </div>
         <motion.div
