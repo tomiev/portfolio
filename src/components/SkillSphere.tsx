@@ -144,41 +144,36 @@ const defaultState: tagSphereProps = {
       alt="CSS3"
       width={40}
     />,
-    <img
-      src="https://cdn.svgporn.com/logos/graphql.svg"
-      alt="GraphQL"
-      width={40}
+    <img src="https://cdn.svgporn.com/logos/dotnet.svg"
+     alt=".NET"
+     width={40}
+    />,
+    <img src="https://cdn.svgporn.com/logos/c-sharp.svg"
+     alt="C#"
+     width={40}
     />,
     <img
       src="https://cdn.svgporn.com/logos/figma.svg"
       alt="Figma"
       width={40}
     />,
-    <img src="https://cdn.svgporn.com/logos/ruby.svg" alt="Ruby" width={50} />,
     <img
       src="https://cdn.svgporn.com/logos/html-5.svg"
       alt="HTML"
       width={40}
     />,
-    <img src="https://cdn.svgporn.com/logos/sass.svg" alt="SASS" width={50} />,
+    <img src="https://cdn.svgporn.com/logos/sass.svg"
+      alt="SASS"
+      width={50}
+    />,
     <img
       width={40}
       src={"https://cdn.svgporn.com/logos/react.svg"}
       alt={"React"}
     />,
     <img
-      src="https://cdn.svgporn.com/logos/rails.svg"
-      alt="Ruby on Rails"
-      width={70}
-    />,
-    <img
       src="https://cdn.svgporn.com/logos/bootstrap.svg"
       alt="Bootstrap"
-      width={40}
-    />,
-    <img
-      src="https://cdn.svgporn.com/logos/heroku-icon.svg"
-      alt="Heroku"
       width={40}
     />,
     <img
@@ -204,17 +199,17 @@ const defaultState: tagSphereProps = {
     />,
     <img
       src="https://cdn.svgporn.com/logos/postgresql.svg"
-      alt="Postgresql"
+      alt="PostgreSQL"
       width={60}
     />,
     <img
       src="https://cdn.svgporn.com/logos/javascript.svg"
-      alt="Javascript"
+      alt="JavaScript"
       width={40}
     />,
   ],
-  maxSpeed: 2,
-  initialSpeed: 32,
+  maxSpeed: 15,
+  initialSpeed: 6,
   initialDirection: 135,
   keepRollingAfterMouseOut: true,
   useContainerInlineStyles: true,
@@ -358,28 +353,20 @@ export default function SkillSphere(props: any) {
     <div
       className={props.className}
       ref={containerRef}
-      /* TOGGLE INTERACTIVITY SETTINGS HERE */
-      // onMouseOver={() => {
-      //   setActive(() => true);
-      //   setFirstRender(() => false);
-      //   setLessSpeed(() => maxSpeed);
-      // }}
-      // onMouseOut={() => {
-      //   setActive(() => false);
-      // }}
-      // onMouseMove={handleMouseMove}
-      // onTouchStart={() => {
-      //   setActive(true);
-      //   setLessSpeed(() => maxSpeed);
-      //   setFirstRender(() => false);
-      // }}
-      // onTouchMove={(e) => {
-      //   if (checkTouchCoordinates(e)) {
-      //     handleMouseMove(e.targetTouches[0]);
-      //   } else {
-      //     setActive(false);
-      //   }
-      // }}
+      onMouseOver={() => {
+        setActive(() => true);
+        setFirstRender(() => false);
+        setLessSpeed(() => maxSpeed);
+      }}
+      onMouseOut={() => {
+        setActive(() => false);
+      }}
+      onMouseMove={handleMouseMove}
+      onTouchStart={() => {
+        setActive(true);
+        setLessSpeed(() => maxSpeed);
+        setFirstRender(() => false);
+      }}
       style={
         useContainerInlineStyles
           ? style || defaultStyles.getContainer(radius, fullWidth, fullHeight)

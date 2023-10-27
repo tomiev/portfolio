@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "description": "portfolio",
   "author": "Todd Evans",
@@ -18,16 +18,15 @@
     "@react-icons/all-files": "^4.1.0",
     "dotenv": "^16.0.2",
     "framer-motion": "^6.5.1",
-    "gatsby": "^4.18.0",
+    "gatsby": "^5.13.0-next.1",
     "gatsby-plugin-anchor-links": "^1.2.1",
     "gatsby-plugin-image": "^2.22.0",
     "gatsby-plugin-sharp": "^4.22.0",
-    "gatsby-source-filesystem": "^4.22.0",
-    "gatsby-source-strapi": "^2.0.0",
     "gatsby-transformer-remark": "^5.22.0",
     "gatsby-transformer-sharp": "^4.22.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-helmet": "^6.1.0",
     "react-icons": "^4.6.0",
     "react-tsparticles": "^2.1.3",
     "tsparticles": "^2.1.3"
@@ -36,6 +35,8 @@
     "autoprefixer": "^10.4.7",
     "gatsby-plugin-postcss": "^5.18.0",
     "postcss": "^8.4.14",
+    "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "^0.5.6",
     "tailwindcss": "^3.1.6"
   }
 }

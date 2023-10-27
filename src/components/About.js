@@ -1,53 +1,33 @@
 import React from 'react'
 import SkillSphere from './SkillSphere'
-import { motion } from 'framer-motion';
+import SectionHeader from './SectionHeader'
+import { motion } from 'framer-motion'
 
 export default function About() {
   return (
-    <section id ='about' className='p-[calc(8px+1.5625vw)] lg:px-48 lg:pt-20 h-fit'>
-      <div className="flex justify-center gap-2 items-center mb-4 md:mb-6">
-        <motion.div
-          className='line'
-          initial={{ width: "0%" }}
-          whileInView={{ width: "50%" }}
-          viewport={{ once: true, amount: "all" }}
-          transition={{ delay: 0.7, duration: 1 }}
-          >
-          </motion.div>
-        <motion.h2
-          className='font-semibold text-3xl text-center'
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: "all" }}
-          transition={{ duration: 0.5 }}
-          >About
-        </motion.h2>
-        <motion.div
-          className="line"
-          initial={{ width: "0%" }}
-          whileInView={{ width: "50%" }}
-          viewport={{ once: true, amount: "all" }}
-          transition={{ delay: 0.7, duration: 1 }}
-          >
-        </motion.div>
-      </div>
+    <section id ='about' className='p-[calc(8px+1.5625vw)] lg:px-48 lg:pt-20 h-fit flex-col'>
+      <SectionHeader title="About" />
       <motion.div
-        className='flex flex-col lg:flex-row justify-center text-lg gap-2 lg:gap-32'
+        className='text-lg flex flex-col md:flex-row justify-center align-center w-100'
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: "some" }}
-        transition={{ duration: 0.5 }}
-        ><div className='flex flex-col gap-6 lg:w-96 lg:text-xl'>
-          <p>I'm a passionate software developer who enjoys problem-solving and learning new skills. I transitioned to coding when I realised how much I enjoyed the programming aspect of my psychology research. With my background in psychology and people-focused job experiences, I’m a natural team player who cares about my peers and performs well in collaborative teams.</p>
-          <p>Lately I've been self-learning React, GraphQL, TailwindCSS, and Gatsby. I also have experience with JavaScript, Ruby on Rails, HTML5/CSS3, Postgresql, and a range of other technologies.</p>
+        transition={{ duration: 0.5 }}>
+        <div class="md:w-6/12">
+          <p>I'm a Software Developer who loves problem-solving, learning new skills and working with passionate people.
+            <br />
+            <br />
+            Currently working at <a href="https://photosentinel.com/" class="text-[#d8f047] lg:hover:underline">photoSentinel</a> building long-term time-lapse solutions using ASP.NET, JavaScript, PostgreSQL, HTML/CSS, and Bootstrap.
+            I also have some experience with Ruby on Rails, React, GraphQL, and a range of other technologies.
+            <br />
+            <br />
+            In my time away from the screen, I enjoy watching and playing basketball 🏀, practising guitar 🎸, and learning about psychology and philosophy 📚.
+          </p>
         </div>
-        <div className='flex flex-col mt-4 lg:w-96'>
-          <div className='flex justify-center lg:flex-none lg:mt-4 lg:ml-4 overflow-hidden'>
-            <SkillSphere />
-          </div>
+        <div class="md:w-6/12 flex justify-center mb-0 pb-0">
+          <SkillSphere />
         </div>
       </motion.div>
-      {/* <span className='text-lime text-xl lg:text-3xl'></span> */}
     </section>
   )
 }

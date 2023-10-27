@@ -1,4 +1,4 @@
-/* Debounce limits the rate at which a function can fire (helping to limit excessive re-renders) */
+/* Limits the rate at which a function can fire (helping to limit excessive re-renders) */
 export function debounce(func, wait, immediate) {
   let timeout;
   return function() {

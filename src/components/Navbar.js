@@ -8,20 +8,16 @@ export default function Navbar() {
   const [visible, setVisible] = useState(true);
 
   const handleScroll = debounce(() => {
-    /* Find current scroll position */
     const currentScrollPos = window.pageYOffset;
-
-    /* Set state based on comparing location info */
     setVisible((prevScrollPos > currentScrollPos) || currentScrollPos < 10);
-
-    /* Set state to new scroll position */
     setPrevScrollPos(currentScrollPos);
   }, 50);
 
     useEffect(() => {
       window.addEventListener('scroll', handleScroll);
       return () => window.removeEventListener('scroll', handleScroll);
-    }, [prevScrollPos, visible, handleScroll]);
+    }, [prevScrollPos, visible, handleScroll]
+  )
 
   return (
     <div className='flex justify-center'>

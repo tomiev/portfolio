@@ -9,22 +9,22 @@ export default function Project({ project, index }) {
       <div className='group relative'>
         {/* Project image */}
         <GatsbyImage
-          image={(project.image.localFile.childImageSharp.gatsbyImageData)}
-          alt={"Screen grab from " + project.title}
+          image={("TODO")}
+          alt={"Screen grab from " + "TODO"}
           className={`rounded-lg`}
         />
         {/* Projects info overlay */}
         <div className='absolute w-full h-full top-0 left-0 p-4 md:h-0 rounded-lg flex flex-col backdrop-brightness-[.20] justify-center items-center md:opacity-0 group-hover:h-full group-hover:opacity-100 duration-300'>
-          <h3 className='m-2 lg:mb-6 text-2xl'>{project.title}</h3>
-          <p>{project.description}</p>
+          <h3 className='m-2 lg:mb-6 text-2xl'>{"TODO"}</h3>
+          <p>{"TODO"}</p>
           <div className='mb-4'>
             {project.stack.map((item) => {
               return <span className='mt-2 inline-block bg-[#001f54] mr-2 py-1 px-2 rounded-lg text-sm' key={item.id}>{item.title}</span>
             })}
           </div>
           <div>
-            <a href={project.github} target="_blank" rel="noreferrer noopener" aria-label="Go to project's GitHub" className='inline-block mr-4 text-2xl'><FaGithub /></a>
-            <a href={project.url} target="_blank" rel="noreferrer noopener" aria-label="Visit project site" className='inline-block text-2xl'><FaExternalLinkAlt /></a>
+            <a href={"TODO"} target="_blank" rel="noreferrer noopener" aria-label="Go to project's GitHub" className='inline-block mr-4 text-2xl'><FaGithub /></a>
+            <a href={"TODO"} target="_blank" rel="noreferrer noopener" aria-label="Visit project site" className='inline-block text-2xl'><FaExternalLinkAlt /></a>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { MemoizedBackground } from './ParticlesBackground';
+import React from 'react'
+import { motion } from 'framer-motion'
+import { MemoizedBackground } from './ParticlesBackground'
 import { StaticImage } from 'gatsby-plugin-image'
 
 export default function Landing() {

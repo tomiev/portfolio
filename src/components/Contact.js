@@ -1,7 +1,7 @@
 import React from 'react'
 import { AnchorLink } from 'gatsby-plugin-anchor-links'
 import { FaArrowCircleUp } from 'react-icons/fa'
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 
 function copyToClipboard() {
   navigator.clipboard.writeText('evansmtodd@gmail.com').then(() => alert('Coped to clipboard'))
@@ -9,7 +9,7 @@ function copyToClipboard() {
 
 export default function Contact() {
   return (
-    <section id='contact' className='p-[calc(8px+1.5625vw)] lg:px-48 lg:py-20 bg-[#BB4025]'>
+    <section id='contact' className='p-[calc(8px+1.5625vw)] lg:px-48 lg:py-20 bg-blue-gradient'>
       <div className='w-full'>
         <div className='mb-4'>
           <motion.div
@@ -27,7 +27,7 @@ export default function Contact() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: "all" }}
             transition={{ duration: 0.5 }}
-            >Please drop me an email if you have an enquiry and I’ll get back to you as soon as possible.
+            >If you have an enquiry, please feel free to reach out to me on LinkedIn or drop me an email and I’ll get back to you as soon as possible.
           </motion.p>
           <motion.button
             onClick={copyToClipboard}

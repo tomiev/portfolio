@@ -1,49 +1,26 @@
 import * as React from "react"
-import { graphql, useStaticQuery } from "gatsby"
 import Navbar from '../components/Navbar'
 import Landing from "../components/Landing"
 import About from "../components/About"
+import Experience from "../components/Experience"
 import FeaturedProjects from "../components/FeaturedProjects"
 import Contact from "../components/Contact"
+import { Helmet } from "react-helmet";
 
 const IndexPage = () => {
-  const { allStrapiProject } = useStaticQuery(graphql`
-    {
-      allStrapiProject(filter: {featured: {eq: true}}) {
-        nodes {
-          github
-          id
-          title
-          url
-          description
-          image {
-            localFile {
-              childImageSharp {
-                gatsbyImageData(
-                  breakpoints: [320 768 1024 1440 2560]
-                )
-              }
-            }
-          }
-          stack {
-            id
-            title
-          }
-        }
-      }
-    }
-  `)
-
   return (
     <main className="bg-dark_gray text-white">
+      <Helmet>
+        <title>Todd Evans | Software Developer</title>
+      </Helmet>
       <Navbar />
       <div>
         <Landing />
         <About />
-        <FeaturedProjects projects={ allStrapiProject.nodes } />
+        <Experience />
+        <FeaturedProjects />
         <Contact />
       </div>
-
     </main>
   )
 }

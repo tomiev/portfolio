@@ -15,21 +15,6 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-postcss",
     "gatsby-plugin-anchor-links",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "images",
-        path: path.join(__dirname, `src`, `images`),
-      },
-    },
-    {
-      resolve: `gatsby-source-strapi`,
-      options: {
-        apiURL: process.env.GATSBY_STRAPI_API_URL,
-        accessToken: process.env.GATSBY_STRAPI_TOKEN,
-        queryLimit: 1000,
-        collectionTypes: [`project`],
-      }
-    },
+    'gatsby-plugin-react-helmet',
   ],
 };

@@ -19,14 +19,14 @@ export default function ParticlesBackground() {
         "fpsLimit": 240,
         "particles": {
           "number": {
-              "value": 70,
+              "value": 50,
               "density": {
                   "enable": true,
                   "value_area": 1000,
               }
           },
           "color": {
-              "value": "#bee11e"
+              "value": "#ffffff"
           },
           "shape": {
               "type": "circle"
@@ -54,7 +54,7 @@ export default function ParticlesBackground() {
           "line_linked": {
               "enable": true,
               "distance": 150,
-              "color": "#bee11e",
+              "color": "#ffffff",
               "opacity": 0.7,
               "width": 1
           },
@@ -116,7 +116,7 @@ export default function ParticlesBackground() {
           },
           "retina_detect": true,
           "background": {
-              "color": "#411ee1",
+              "color": "#0C0B93",
               "image": "",
               "position": "50% 50%",
               "repeat": "no-repeat",
