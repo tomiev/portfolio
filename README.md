@@ -10,7 +10,7 @@
 <h3 align="center">Developer Portfolio</h3>
 
   <p align="center">
-    Portfolio displaying my recent work in web development 💻
+    This was the first iteration of my professional portfolio 💻
     <br />
     <a href="https://github.com/tomiev/portfolio"><strong>Explore the docs »</strong></a>
     <br />
